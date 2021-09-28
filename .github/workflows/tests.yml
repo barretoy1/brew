@@ -234,7 +234,7 @@ jobs:
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: codecov/codecov-action@c585afe366f940d214dc09df2664c06d7fe07052
+      - uses: codecov/codecov-action@f32b3a3741e1053eb607407145bc9619351dc93b
 
   test-default-formula-linux:
     name: test default formula (Linux)
@@ -339,4 +339,4 @@ jobs:
 
       - run: brew test-bot --only-formulae --test-default-formula
 
-      - uses: codecov/codecov-action@c585afe366f940d214dc09df2664c06d7fe07052
+      - uses: codecov/codecov-action@f32b3a3741e1053eb607407145bc9619351dc93b
